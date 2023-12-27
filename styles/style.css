@@ -36,3 +36,8 @@ ul,
 ol {
   list-style: none;
 }
+
+
+.content{
+  display: flex;
+}
