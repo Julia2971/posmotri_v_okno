@@ -166,6 +166,10 @@ ol {
 }
 .search-form__fieldset {
   border: none;
+  
+}
+.search-form__fieldset:hover{
+  text-decoration: none;
 }
 .search-form__label {
   width: fit-content;
@@ -192,6 +196,7 @@ ol {
   line-height: normal;
   min-inline-size: 225px;
 }
+
 .button {
   color: #fff;
   text-align: center;
@@ -225,9 +230,6 @@ ol {
 }
 .more-button {
   inline-size: 100%;
-}
-.search-form__label:hover {
-  text-decoration: underline;
 }
 .search-form__pseudo-checkbox {
   inline-size: 19px;
