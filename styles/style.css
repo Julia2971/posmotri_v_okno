@@ -14,7 +14,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex;
+  display: grid;
   place-items: center center;
 }
 h1,
@@ -139,7 +139,7 @@ ol {
 }
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -149,7 +149,7 @@ ol {
 }
 .content__video-card-description {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
