@@ -15,8 +15,7 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-items: center center;
 }
 h1,
 h2,
@@ -36,7 +35,7 @@ ol {
   list-style: none;
 }
 .content {
-  max-width: 1140px;
+  inline-size: 1140px;
   display: flex;
   column-gap: 28px;
   align-items: flex-end;
@@ -44,18 +43,16 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  row-gap: 26px;
-  height: 534px;
+  row-gap: 26px; 
 }
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .content__list {
-  overflow: scroll;
-  max-height: 298px;
-  width: 399px;
+  overflow: auto;
+  block-size: 298px;
   position: relative;
 }
 .result {
@@ -64,8 +61,8 @@ ol {
   row-gap: 16px;
 }
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   position: relative;
 }
 
@@ -87,12 +84,12 @@ ol {
   justify-content: space-between;
 }
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  min-inline-size: 194px;
+  block-size: 103px;
 }
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +98,7 @@ ol {
 }
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +107,7 @@ ol {
 }
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -188,17 +185,17 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 225px;
+  min-inline-size: 225px;
 }
 .button {
   color: #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -222,10 +219,12 @@ ol {
   outline-offset: 2px;
 }
 .search-form__submit-button {
-  width: 194px;
+  inline-size: 194px;
+  align-self: end;
+  min-block-size: 34px;
 }
 .more-button {
-  width: 399px;
+  inline-size: 100%;
 }
 .search-form__label:hover {
   text-decoration: underline;
@@ -255,7 +254,7 @@ ol {
 }
 .search-form__label-text {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
